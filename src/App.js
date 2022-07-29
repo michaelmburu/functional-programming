@@ -1,5 +1,5 @@
-import { BigSuccessButton, DangerButton } from "./composition"
-import { RecursiveComponent } from "./RecursiveComponent"
+import { BigSuccessButton, DangerButton } from "./partiallyApply"
+
 
 const nestedObject = {
 	a: 1,
@@ -23,7 +23,7 @@ const nestedObject = {
 	}
 }
 
-// Component compostion, reuse of the component code through compostion recursion
+// Partially applied componets, specify set number of props in a component ahead of time
 function App() {
 	return (
 		<>
