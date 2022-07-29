@@ -1,3 +1,4 @@
+import { BigSuccessButton, DangerButton } from "./composition"
 import { RecursiveComponent } from "./RecursiveComponent"
 
 const nestedObject = {
@@ -22,10 +23,13 @@ const nestedObject = {
 	}
 }
 
-// Recursive component, display nested data structure
+// Component compostion, reuse of the component code through compostion recursion
 function App() {
 	return (
-		<RecursiveComponent data={nestedObject} />
+		<>
+			<DangerButton text="Cancel" />
+			<BigSuccessButton text="Approve" />
+		</>
 	);
 }
 
